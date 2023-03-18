@@ -71,8 +71,7 @@ ul {
     height: 70px;
     align-items: center;
 }
-
-.container #navbar ul li .home:active{
+.container #navbar ul li a:hover {
     color: var(--primry-color);
     background: var(--dark-color);
     padding: 10px;
@@ -143,74 +142,54 @@ ul {
 
 }
 
-.container #navbar a:hover {
+.cantent a:hover {
     background:#c92626d7 ;
     color: #ccc;
 }
 
 
 
-/******************** photos section ******************/
-.photos > p {
-    padding-left: 300px;
-    padding-top:50px ;
-    padding-bottom:50px ;
-    width: 70%;
-    font-size: 3rem;
 
-}
-.photos-section {
-    margin-top: 100px;
-    width: 70%;
-    margin: auto;
+/*************** show case section **************/
+
+.show-case-container {
+    padding: 20px 300px;
     display: grid;
-    grid-template-columns:repeat(2,auto) ;
-    grid-template-rows: auto 400px;
+    grid-template-columns: 800px 100px;
+    grid-gap:30px ;
     
 }
 
-.photos-section .box {
-    padding: 10px;
-    background-color: #fff;
-    border: 2px solid #f0eded;
-    margin: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2) ;
-    transition:all .2s ease-in ;
+.img-articl > p {
+    width: 650px;
+    font-size: 1.3rem;
 }
-.photos-section .box:hover {
-    background-color: #f4f4f4;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.4) ;
+.img-articl .about-autor {
+    background: #dcd9d9;
+    border: 2px solid #444;
+    padding: 10px;
+}
+
+.navigation {
+    margin-top: 60px;
+    background: rgb(230, 228, 228);
+    height: 300px;
+    width: 200px;
+    padding: 30px;
+}
+
+.navigation h4 {
+    margin: 10px;
+    font-size: 1.5rem;
+    transition: all .2s ease-in;
+}
+
+.navigation h4:hover {
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
-#box1 {grid-column: 1/ span 2;display: flex;}
-#box3 {grid-row: 2 / span 3;display: flex; flex-direction: column;}
-#box4 {grid-row: 2 / span 3;display: flex; flex-direction: column;}
-#box5 {grid-row: 2 / span 3;display: flex;flex-direction: column;}
-#box7 {grid-column: 2/span 2;display: flex;}
-#box6 {grid-column: 1/ span 1 ;}
 
-#box1 div ,
-#box3 div ,
-#box4 div ,
-#box5 div ,
-#box7 div{
-    flex: 1;
-    font-size: 1.2rem;
-}
-
-#box1 img,#box7 img {
-    flex: 1 ;
-    width: 50%; 
-}
-
-#box3 img,
-#box4 img,
-#box5 img {
-    flex: 1;
-    height: 60%;
-    width: 100%;
-}
 
 /*************** footer section ****************/
 
